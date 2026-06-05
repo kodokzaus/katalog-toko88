@@ -1,0 +1,564 @@
+{
+  "meta": {
+    "generated_at": "2026-06-04T15:54:53.508050",
+    "total_produk": 19,
+    "total_tersedia": 15
+  },
+  "toko": {
+    "nama_toko": "Toko 88 kubu",
+    "alamat_toko": "",
+    "whatsapp_toko": ""
+  },
+  "kategori": [
+    "Bahan Bangunan",
+    "Kelontong",
+    "Lainnya",
+    "Pakaian"
+  ],
+  "produk": [
+    {
+      "id": 9,
+      "kode": "BNG002",
+      "nama": "Mesin ketam ATS",
+      "deskripsi": "",
+      "kategori": "Bahan Bangunan",
+      "kode_kategori": "BNG",
+      "foto": null,
+      "has_varian": true,
+      "varian": [
+        {
+          "sku_id": 12,
+          "sku_kode": "BNG002-MERAH",
+          "label": "Merah",
+          "harga": 465000.0,
+          "stok": 4.0,
+          "tersedia": true,
+          "foto": null
+        }
+      ],
+      "harga": 465000.0,
+      "satuan": "pcs",
+      "stok": 4.0,
+      "tersedia": true,
+      "harga_max": 465000.0
+    },
+    {
+      "id": 4,
+      "kode": "BNG001",
+      "nama": "Semen Tiga Roda",
+      "deskripsi": "",
+      "kategori": "Bahan Bangunan",
+      "kode_kategori": "BNG",
+      "foto": null,
+      "has_varian": true,
+      "varian": [
+        {
+          "sku_id": 6,
+          "sku_kode": "BNG001-FRE-BIR",
+          "label": "Biru / Free Size",
+          "harga": 80000.0,
+          "stok": -10.0,
+          "tersedia": false,
+          "foto": null
+        }
+      ],
+      "harga": 80000.0,
+      "satuan": "pcs",
+      "stok": -10.0,
+      "tersedia": false,
+      "harga_max": 80000.0
+    },
+    {
+      "id": 12,
+      "kode": "BNG005",
+      "nama": "fischer",
+      "deskripsi": "fisher baut beton",
+      "kategori": "Bahan Bangunan",
+      "kode_kategori": "BNG",
+      "foto": null,
+      "has_varian": true,
+      "varian": [
+        {
+          "sku_id": 17,
+          "sku_kode": "BNG005-S10",
+          "label": "s10",
+          "harga": 18000.0,
+          "stok": 10.0,
+          "tersedia": true,
+          "foto": null
+        },
+        {
+          "sku_id": 16,
+          "sku_kode": "BNG005-S6",
+          "label": "s6",
+          "harga": 10000.0,
+          "stok": 10.0,
+          "tersedia": true,
+          "foto": null
+        }
+      ],
+      "harga": 10000.0,
+      "satuan": "pcs",
+      "stok": 20.0,
+      "tersedia": true,
+      "harga_max": 18000.0
+    },
+    {
+      "id": 10,
+      "kode": "BNG003",
+      "nama": "minyak singer",
+      "deskripsi": "minyak pelumas seba guna",
+      "kategori": "Bahan Bangunan",
+      "kode_kategori": "BNG",
+      "foto": null,
+      "has_varian": true,
+      "varian": [
+        {
+          "sku_id": 13,
+          "sku_kode": "BNG003-HIJAU",
+          "label": "Hijau",
+          "harga": 7000.0,
+          "stok": 11.0,
+          "tersedia": true,
+          "foto": null
+        }
+      ],
+      "harga": 7000.0,
+      "satuan": "pcs",
+      "stok": 11.0,
+      "tersedia": true,
+      "harga_max": 7000.0
+    },
+    {
+      "id": 6,
+      "kode": "",
+      "nama": "semen honc",
+      "deskripsi": "",
+      "kategori": "Bahan Bangunan",
+      "kode_kategori": "BNG",
+      "foto": null,
+      "has_varian": true,
+      "varian": [
+        {
+          "sku_id": 7,
+          "sku_kode": "None-FRE",
+          "label": "Free Size",
+          "harga": 870000.0,
+          "stok": 0,
+          "tersedia": false,
+          "foto": null
+        }
+      ],
+      "harga": 870000.0,
+      "satuan": "pcs",
+      "stok": 0,
+      "tersedia": false,
+      "harga_max": 870000.0
+    },
+    {
+      "id": 2,
+      "kode": "BRG002",
+      "nama": "Aqua 600ml",
+      "deskripsi": "",
+      "kategori": "Kelontong",
+      "kode_kategori": "KLG",
+      "harga": 4100.0,
+      "satuan": "Dus",
+      "stok": 4.0,
+      "tersedia": true,
+      "foto": null,
+      "has_varian": false,
+      "varian": []
+    },
+    {
+      "id": 16,
+      "kode": "KLG004",
+      "nama": "HANGER FOLDING PLASTIK",
+      "deskripsi": "",
+      "kategori": "Kelontong",
+      "kode_kategori": "KLG",
+      "foto": null,
+      "has_varian": true,
+      "varian": [
+        {
+          "sku_id": 23,
+          "sku_kode": "KLG004-20STIK",
+          "label": "20 STIK",
+          "harga": 22000.0,
+          "stok": 6.0,
+          "tersedia": true,
+          "foto": null
+        }
+      ],
+      "harga": 22000.0,
+      "satuan": "pcs",
+      "stok": 6.0,
+      "tersedia": true,
+      "harga_max": 22000.0
+    },
+    {
+      "id": 1,
+      "kode": "BRG001",
+      "nama": "Indomie Goreng",
+      "deskripsi": "",
+      "kategori": "Kelontong",
+      "kode_kategori": "KLG",
+      "harga": 3500.0,
+      "satuan": "Pcs",
+      "stok": 15.0,
+      "tersedia": true,
+      "foto": null,
+      "has_varian": false,
+      "varian": []
+    },
+    {
+      "id": 17,
+      "kode": "KLG005",
+      "nama": "SEKOP BIASA",
+      "deskripsi": "",
+      "kategori": "Kelontong",
+      "kode_kategori": "KLG",
+      "foto": null,
+      "has_varian": true,
+      "varian": [
+        {
+          "sku_id": 24,
+          "sku_kode": "KLG005-BIASA",
+          "label": "BIASA",
+          "harga": 10000.0,
+          "stok": 12.0,
+          "tersedia": true,
+          "foto": null
+        }
+      ],
+      "harga": 10000.0,
+      "satuan": "pcs",
+      "stok": 12.0,
+      "tersedia": true,
+      "harga_max": 10000.0
+    },
+    {
+      "id": 19,
+      "kode": "KLG007",
+      "nama": "SENDOK SOUP",
+      "deskripsi": "",
+      "kategori": "Kelontong",
+      "kode_kategori": "KLG",
+      "foto": null,
+      "has_varian": true,
+      "varian": [
+        {
+          "sku_id": 26,
+          "sku_kode": "KLG007-99POLKAD",
+          "label": "99 POLKADOT",
+          "harga": 10000.0,
+          "stok": 12.0,
+          "tersedia": true,
+          "foto": null
+        }
+      ],
+      "harga": 10000.0,
+      "satuan": "pcs",
+      "stok": 12.0,
+      "tersedia": true,
+      "harga_max": 10000.0
+    },
+    {
+      "id": 20,
+      "kode": "KLG008",
+      "nama": "SODET/SPATULA GORENG",
+      "deskripsi": "",
+      "kategori": "Kelontong",
+      "kode_kategori": "KLG",
+      "foto": null,
+      "has_varian": true,
+      "varian": [
+        {
+          "sku_id": 27,
+          "sku_kode": "KLG008-99POLKAD",
+          "label": "99 POLKADOT",
+          "harga": 10000.0,
+          "stok": 6.0,
+          "tersedia": true,
+          "foto": null
+        }
+      ],
+      "harga": 10000.0,
+      "satuan": "pcs",
+      "stok": 6.0,
+      "tersedia": true,
+      "harga_max": 10000.0
+    },
+    {
+      "id": 14,
+      "kode": "KLG002",
+      "nama": "TALENAN KAYU",
+      "deskripsi": "",
+      "kategori": "Kelontong",
+      "kode_kategori": "KLG",
+      "foto": null,
+      "has_varian": true,
+      "varian": [
+        {
+          "sku_id": 20,
+          "sku_kode": "KLG002-TMDM250X",
+          "label": "TMDM 250 X 160",
+          "harga": 20000.0,
+          "stok": 6.0,
+          "tersedia": true,
+          "foto": null
+        },
+        {
+          "sku_id": 19,
+          "sku_kode": "KLG002-TMRS320X",
+          "label": "TMRS 320 x 210",
+          "harga": 38000.0,
+          "stok": 6.0,
+          "tersedia": true,
+          "foto": null
+        }
+      ],
+      "harga": 20000.0,
+      "satuan": "pcs",
+      "stok": 12.0,
+      "tersedia": true,
+      "harga_max": 38000.0
+    },
+    {
+      "id": 15,
+      "kode": "KLG003",
+      "nama": "TEKO JAWA",
+      "deskripsi": "",
+      "kategori": "Kelontong",
+      "kode_kategori": "KLG",
+      "foto": null,
+      "has_varian": true,
+      "varian": [
+        {
+          "sku_id": 21,
+          "sku_kode": "KLG003-A318CM",
+          "label": "A3 18CM",
+          "harga": 92000.0,
+          "stok": 3.0,
+          "tersedia": true,
+          "foto": null
+        },
+        {
+          "sku_id": 22,
+          "sku_kode": "KLG003-A320CM",
+          "label": "A3 20 CM",
+          "harga": 110000.0,
+          "stok": 5.0,
+          "tersedia": true,
+          "foto": null
+        }
+      ],
+      "harga": 92000.0,
+      "satuan": "pcs",
+      "stok": 8.0,
+      "tersedia": true,
+      "harga_max": 110000.0
+    },
+    {
+      "id": 18,
+      "kode": "KLG006",
+      "nama": "TONG SAMPAH",
+      "deskripsi": "",
+      "kategori": "Kelontong",
+      "kode_kategori": "KLG",
+      "foto": null,
+      "has_varian": true,
+      "varian": [
+        {
+          "sku_id": 25,
+          "sku_kode": "KLG006-SEGITUTU-42L",
+          "label": "SEGI+TUTUP / 42l",
+          "harga": 85000.0,
+          "stok": 6.0,
+          "tersedia": true,
+          "foto": null
+        }
+      ],
+      "harga": 85000.0,
+      "satuan": "pcs",
+      "stok": 6.0,
+      "tersedia": true,
+      "harga_max": 85000.0
+    },
+    {
+      "id": 13,
+      "kode": "KLG001",
+      "nama": "panci ekonomi jawa",
+      "deskripsi": "panci jawa",
+      "kategori": "Kelontong",
+      "kode_kategori": "KLG",
+      "foto": null,
+      "has_varian": true,
+      "varian": [
+        {
+          "sku_id": 18,
+          "sku_kode": "KLG001-28CM",
+          "label": "28 cm",
+          "harga": 125000.0,
+          "stok": 6.0,
+          "tersedia": true,
+          "foto": null
+        }
+      ],
+      "harga": 125000.0,
+      "satuan": "pcs",
+      "stok": 6.0,
+      "tersedia": true,
+      "harga_max": 125000.0
+    },
+    {
+      "id": 7,
+      "kode": "",
+      "nama": "larutan cap kaki tiga",
+      "deskripsi": "makanan",
+      "kategori": "Lainnya",
+      "kode_kategori": "LNY",
+      "foto": null,
+      "has_varian": true,
+      "varian": [
+        {
+          "sku_id": 9,
+          "sku_kode": "PRD7-FREESIZE",
+          "label": "Free Size",
+          "harga": 27000.0,
+          "stok": -7.0,
+          "tersedia": false,
+          "foto": null
+        }
+      ],
+      "harga": 27000.0,
+      "satuan": "pcs",
+      "stok": -7.0,
+      "tersedia": false,
+      "harga_max": 27000.0
+    },
+    {
+      "id": 8,
+      "kode": "8997212800295",
+      "nama": "permen fox berries",
+      "deskripsi": "permen fox kalengan",
+      "kategori": "Lainnya",
+      "kode_kategori": "LNY",
+      "foto": null,
+      "has_varian": true,
+      "varian": [
+        {
+          "sku_id": 11,
+          "sku_kode": "8997212800295-FREESIZE",
+          "label": "Free Size",
+          "harga": 20000.0,
+          "stok": 0,
+          "tersedia": false,
+          "foto": null
+        }
+      ],
+      "harga": 20000.0,
+      "satuan": "pcs",
+      "stok": 0,
+      "tersedia": false,
+      "harga_max": 20000.0
+    },
+    {
+      "id": 5,
+      "kode": "",
+      "nama": "Kaos Polo",
+      "deskripsi": "baju polo murah",
+      "kategori": "Pakaian",
+      "kode_kategori": "PKN",
+      "foto": null,
+      "has_varian": true,
+      "varian": [
+        {
+          "sku_id": 8,
+          "sku_kode": "None-FRE-BIR",
+          "label": "Biru / Free Size",
+          "harga": 35000.0,
+          "stok": 8.0,
+          "tersedia": true,
+          "foto": null
+        },
+        {
+          "sku_id": 5,
+          "sku_kode": "None-S-HIJ",
+          "label": "Hijau / S",
+          "harga": 35000.0,
+          "stok": 24.0,
+          "tersedia": true,
+          "foto": null
+        },
+        {
+          "sku_id": 10,
+          "sku_kode": "PRD5-FREESIZE",
+          "label": "Free Size",
+          "harga": 35000.0,
+          "stok": 20.0,
+          "tersedia": true,
+          "foto": null
+        }
+      ],
+      "harga": 35000.0,
+      "satuan": "pcs",
+      "stok": 52.0,
+      "tersedia": true,
+      "harga_max": 35000.0
+    },
+    {
+      "id": 3,
+      "kode": "PKN001",
+      "nama": "Kaos Polos Combed 30s",
+      "deskripsi": "",
+      "kategori": "Pakaian",
+      "kode_kategori": "PKN",
+      "foto": null,
+      "has_varian": true,
+      "varian": [
+        {
+          "sku_id": 3,
+          "sku_kode": "PKN001-BIR-L",
+          "label": "Biru / L",
+          "harga": 35000.0,
+          "stok": 6.0,
+          "tersedia": true,
+          "foto": null
+        },
+        {
+          "sku_id": 4,
+          "sku_kode": "PKN001-BIR-XL",
+          "label": "Biru / XL",
+          "harga": 35000.0,
+          "stok": 5.0,
+          "tersedia": true,
+          "foto": null
+        },
+        {
+          "sku_id": 2,
+          "sku_kode": "PKN001-MER-M",
+          "label": "Merah / M",
+          "harga": 35000.0,
+          "stok": 7.0,
+          "tersedia": true,
+          "foto": null
+        },
+        {
+          "sku_id": 1,
+          "sku_kode": "PKN001-MER-S",
+          "label": "Merah / S",
+          "harga": 35000.0,
+          "stok": 6.0,
+          "tersedia": true,
+          "foto": null
+        }
+      ],
+      "harga": 35000.0,
+      "satuan": "pcs",
+      "stok": 24.0,
+      "tersedia": true,
+      "harga_max": 35000.0
+    }
+  ]
+}
