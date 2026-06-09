@@ -228,6 +228,10 @@
 <header class="site-header">
   <div class="header-inner">
     <div class="store-name" id="storeName">🏪 Katalog Produk</div>
+    <a href="promo.html" style="color:#fff;font-size:.85rem;font-weight:700;
+       text-decoration:none;white-space:nowrap;display:flex;align-items:center;gap:5px">
+      🔥 Promo
+    </a>
     <a class="header-wa" id="headerWa" href="#" target="_blank">
       <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
         <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
@@ -391,14 +395,30 @@ function renderGrid(produkList) {
   empty.style.display = 'none';
 
   grid.innerHTML = produkList.map(p => {
-    const hargaStr = p.has_varian && p.harga_max && p.harga_max !== p.harga
-      ? `Rp ${fmt(p.harga)} – ${fmt(p.harga_max)}`
-      : `Rp ${fmt(p.harga)}`;
+    const isPromo = p.is_promo && p.harga_promo > 0 && p.harga_promo < p.harga;
+    const hargaStr = isPromo
+      ? `<span style="text-decoration:line-through;color:#aaa;font-size:.8rem">Rp ${fmt(p.harga)}</span>
+         <span style="color:#e63946;font-weight:800"> Rp ${fmt(p.harga_promo)}</span>`
+      : p.has_varian && p.harga_max && p.harga_max !== p.harga
+        ? `Rp ${fmt(p.harga)} – ${fmt(p.harga_max)}`
+        : `Rp ${fmt(p.harga)}`;
+
+    const pct = isPromo ? Math.round((1 - p.harga_promo/p.harga)*100) : 0;
 
     const fotoEl = p.foto
-      ? `<div class="card-img"><img src="${escHtml(p.foto)}" alt="${escHtml(p.nama)}" loading="lazy"
-              onerror="this.parentElement.innerHTML='📦'"></div>`
-      : `<div class="card-img">📦</div>`;
+      ? `<div class="card-img" style="position:relative">
+           ${isPromo ? `<span style="position:absolute;top:6px;left:6px;background:#e63946;color:#fff;
+             font-size:.65rem;font-weight:800;padding:3px 8px;border-radius:5px;z-index:1">PROMO</span>
+             <span style="position:absolute;top:6px;right:6px;background:#ffd60a;color:#1a1a2e;
+             font-size:.7rem;font-weight:900;padding:4px 7px;border-radius:6px;z-index:1">${pct}%<br><small style="font-size:.55rem">OFF</small></span>` : ''}
+           <img src="${escHtml(p.foto)}" alt="${escHtml(p.nama)}" loading="lazy"
+                onerror="this.parentElement.innerHTML='📦'">
+         </div>`
+      : `<div class="card-img" style="position:relative">
+           ${isPromo ? `<span style="position:absolute;top:6px;left:6px;background:#e63946;color:#fff;
+             font-size:.65rem;font-weight:800;padding:3px 8px;border-radius:5px;z-index:1">PROMO</span>` : ''}
+           📦
+         </div>`;
 
     const badgeVarian = p.has_varian
       ? `<span class="badge-stok badge-varian">${p.varian.length} varian</span>` : '';
@@ -483,7 +503,15 @@ function updateModalHarga(p) {
     document.getElementById('modalHarga').textContent = hargaStr;
     document.getElementById('modalStok').textContent = `Total stok: ${p.stok} unit`;
   } else {
-    document.getElementById('modalHarga').textContent = p.harga ? `Rp ${fmt(p.harga)}` : 'Hubungi kami';
+    const isPromoM = p.is_promo && p.harga_promo > 0 && p.harga_promo < p.harga;
+    document.getElementById('modalHarga').innerHTML = isPromoM
+      ? `<span style="text-decoration:line-through;color:#aaa;font-size:1rem">Rp ${fmt(p.harga)}</span>
+         <span style="color:#e63946;font-weight:800;font-size:1.4rem"> Rp ${fmt(p.harga_promo)}</span>
+         <span style="background:#fdecea;color:#e63946;font-size:.75rem;font-weight:700;
+               padding:2px 8px;border-radius:4px;margin-left:6px">
+           Hemat Rp ${fmt(p.harga - p.harga_promo)}
+         </span>`
+      : p.harga ? `Rp ${fmt(p.harga)}` : 'Hubungi kami';
     document.getElementById('modalStok').textContent = p.tersedia
       ? `Stok: ${p.stok} ${p.satuan || ''}` : 'Stok habis';
   }
