@@ -6,14 +6,14 @@
   },
   "toko": {
     "nama_toko": "Toko 88 kubu",
-    "alamat_toko": "",
-    "whatsapp_toko": ""
+    "alamat_toko": "kubu",
+    "whatsapp_toko": "6285159668618"
   },
   "kategori": [
     "Bahan Bangunan",
     "Kelontong",
-    "Lainnya",
-    "Pakaian"
+    "Pakaian",
+    "Lainnya"
   ],
   "produk": [
     {
